@@ -19,7 +19,7 @@ public class OcrController {
 	// Passar por parametro o arquivo - definir o objeto com autor, data...
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public Object hello() {
-		File imageFile = new File("test.jpg");
+		File imageFile = new File("test.png");
 		return ocrService.converterOcr(imageFile);
 	}
 }
